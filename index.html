@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Document</title>
+</head>
+<body >
+    <!-- <div class="container">
+        <h1>Welcome to Merchandise Shop</h1>
+        <div class="products">
+            <img src="C:\\Sharan\\VS\\shopping cart\\images\\tshirt.jpg" width="250px" height="250px">
+            <img src="C:\\Sharan\\VS\\shopping cart\\images\\mug.jpg" width="250px" height="250px">
+            <img src="C:\\Sharan\\VS\\shopping cart\\images\\bag.jpg" width="250px" height="250px">
+        </div>
+        <div class="price">
+            <h3 id='shirt-price'>₹500</h3>
+            <h3 id='shirt-price'>₹250</h3>
+            <h3 id='shirt-price'>₹1000</h3>
+        </div>
+        <div class="btn">
+            <button class="btn-lg btn-primary" id='atc-1'>Add To Cart</button>
+            <button class="btn-lg btn-primary" id='atc-1'>Add To Cart</button>
+            <button class="btn-lg btn-primary" id='atc-1'>Add To Cart</button>
+        </div>  -->
+    <div class="container">
+        <h1>Welcome to Merchandise Shop</h1>
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img" src="C:\\Sharan\\VS\\shopping cart\\images\\tshirt.jpg">
+                    <div class="card-block">
+                        <h4 class="card-title">T-Shirt</h4>
+                        <p class="card-text">Price: ₹500</p>
+                        <button class="btn-lg btn-primary" id="tshirt" onclick="addProduct(this.id)">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                    <img class="card-img" src="C:\\Sharan\\VS\\shopping cart\\images\\mug.jpg">
+                    <div class="card-block">
+                        <h4 class="card-title">Mug</h4>
+                        <p class="card-text">Price: ₹200</p>
+                        <button class="btn-lg btn-primary" id="mug" onclick="addProduct(this.id)">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 20rem;">
+                <img class="card-img" src="C:\\Sharan\\VS\\shopping cart\\images\\bag.jpg">
+                    <div class="card-block">
+                    <h4 class="card-title">Bag</h4>
+                    <p class="card-text">Price: ₹1000</p>
+                    <button class="btn-lg btn-primary" id="bag" onclick="addProduct(this.id)">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart">
+            <table  id="table" style="display:none">
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity </th>
+                    <th>Total Price</th>
+                </tr>
+                <tr id="tShirt-row" style="display:none">
+                    <td>T-Shirt</td>
+                    <td>₹500</td>
+                    <td><button id='tshirt' class="btn btn-success mr-2" onclick="add(this.id)">+</button><span id='quantity-tshirt'></span><button id='tshirt' class="btn btn-danger" onclick="remove(this.id)">-</button></td>
+                    <td><span id='totalprice-tshirt'></span></td>
+                </tr>
+                <tr id="mug-row" style="display:none">
+                    <td>Mug</td>
+                    <td>₹200</td>
+                    <td><button id='mug' class="btn btn-success mr-2" onclick="add(this.id)">+</button><span id='quantity-mug'></span><button id='mug' class="btn btn-danger" onclick="remove(this.id)">-</button></td>
+                    <td><span id='totalprice-mug'></span></td>
+                </tr>
+                <tr id="bag-row" style="display:none">
+                    <td>Bag</td>
+                    <td>₹1000</td>
+                    <td><button id='bag' class="btn btn-success mr-2" onclick="add(this.id)">+</button><span id='quantity-bag'></span><button id='bag' class="btn btn-danger" onclick="remove(this.id)" >-</button></td>
+                    <td><span id='totalprice-bag'></span></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><h3>Grand Total</h3></td>
+                    <td><span id="grand-total">0</span></td>
+                </tr>
+            </table>
+        </div>
+        <div style="margin:10px">
+            <button class="btn-lg btn-success" id="payment">Pay</button>
+        </div>
+    </div>
+<script src="script\script.js"></script>
+</body>
+</html>

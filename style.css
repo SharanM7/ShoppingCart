@@ -1,0 +1,29 @@
+body {
+    background-color :#d6d6c2
+    
+}
+.container{
+    width: 80%;
+    margin:auto;
+    margin-top: 50px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.card {
+    margin-bottom: 20px;
+  }
+
+.card-img {
+    width: 200px;
+    height: 200px;
+    align-self: center;
+}
+table, th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.cart{
+    display: flex;
+    justify-content: space-around;
+}
